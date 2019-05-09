@@ -10,10 +10,10 @@ import UIKit
 
 let immagine_introduttiva = UIImageView(image: #imageLiteral(resourceName: "THC"))
 class ViewController: UIViewController {
-
+    @IBOutlet weak var btn_inizia: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
