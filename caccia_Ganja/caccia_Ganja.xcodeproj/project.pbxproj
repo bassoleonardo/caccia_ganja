@@ -22,6 +22,7 @@
 		07828F2C228422860061CAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07828F2F228422860061CAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07828F31228422860061CAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07828F38228435710061CAF1 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		07828F24228422840061CAF1 /* caccia_Ganja */ = {
 			isa = PBXGroup;
 			children = (
+				07828F37228434310061CAF1 /* Fonts */,
 				07828F25228422840061CAF1 /* AppDelegate.swift */,
 				07828F27228422840061CAF1 /* ViewController.swift */,
 				07828F29228422840061CAF1 /* Main.storyboard */,
@@ -62,6 +64,14 @@
 				07828F31228422860061CAF1 /* Info.plist */,
 			);
 			path = caccia_Ganja;
+			sourceTree = "<group>";
+		};
+		07828F37228434310061CAF1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				07828F38228435710061CAF1 /* Raleway-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
