@@ -8,6 +8,7 @@
 
 import UIKit
 
+let immagine_introduttiva = UIImageView(image: #imageLiteral(resourceName: "THC"))
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
