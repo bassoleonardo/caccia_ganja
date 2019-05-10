@@ -9,8 +9,10 @@
 import UIKit
 
 let immagine_introduttiva = UIImageView(image: #imageLiteral(resourceName: "THC"))
+let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 class ViewController: UIViewController {
     @IBOutlet weak var btn_inizia: UIButton!
+    @IBOutlet weak var btn_istruzioni: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,10 @@ class ViewController: UIViewController {
         
     }
 
+    func appare_Bob()
+    {
+        
+    }
 
 }
 

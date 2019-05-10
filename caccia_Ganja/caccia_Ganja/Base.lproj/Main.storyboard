@@ -42,12 +42,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jag-D3-5Au">
-                                <rect key="frame" x="79" y="610" width="280" height="56"/>
+                                <rect key="frame" x="79" y="603" width="280" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
                                 <state key="normal" title="COMINCIA LA CACCIA">
                                     <color key="titleColor" red="0.45111596584320068" green="0.058944873511791229" blue="0.131082683801651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3xk-Jp-YcH" kind="show" id="emm-HL-UdN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-cr-2tb">
+                                <rect key="frame" x="128" y="695" width="182" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <state key="normal" title="ISTRUZIONI">
+                                    <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -56,11 +68,42 @@
                     </view>
                     <connections>
                         <outlet property="btn_inizia" destination="jag-D3-5Au" id="Ib3-0O-xY4"/>
+                        <outlet property="btn_istruzioni" destination="o4i-cr-2tb" id="6Wg-Eb-2mN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52.173913043478265" y="26.785714285714285"/>
+        </scene>
+        <!--View Controller istruzioni-->
+        <scene sceneID="w1w-0m-4xG">
+            <objects>
+                <viewController id="isw-KZ-bsM" customClass="ViewController_istruzioni" customModule="caccia_Ganja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqM-Kg-spp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="SLa-lQ-WAT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3DG-fi-Koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="697"/>
+        </scene>
+        <!--View Controller Inizia Il Gioco-->
+        <scene sceneID="LwP-eM-eth">
+            <objects>
+                <viewController id="3xk-Jp-YcH" customClass="ViewController_IniziaIlGioco" customModule="caccia_Ganja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yla-9l-ppE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pWv-bY-B7O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nU-wr-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="27"/>
         </scene>
     </scenes>
     <resources>
