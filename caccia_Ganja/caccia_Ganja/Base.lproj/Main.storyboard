@@ -131,6 +131,18 @@
                                 <rect key="frame" x="20" y="149" width="374" height="713"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-Zg-W11">
+                                <rect key="frame" x="171" y="53" width="69" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="aZC-ur-YKc">
+                                <rect key="frame" x="248" y="53" width="69" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="mjj-il-yYH">
+                                <rect key="frame" x="325" y="53" width="69" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pWv-bY-B7O"/>
@@ -146,5 +158,6 @@
     </scenes>
     <resources>
         <image name="THC" width="127" height="150"/>
+        <image name="accendino_vita" width="210" height="230"/>
     </resources>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
-    // mettere come vite i clipper !!
+    // mettere come vite gli accendini !! 
     // far evolvere la piantina BOB
     override func viewDidLoad() {
         super.viewDidLoad()
