@@ -11,10 +11,16 @@ import UIKit
 class ViewController_istruzioni: UIViewController {
 
     @IBOutlet weak var lbl_istruzioni: UILabel!
+    @IBOutlet weak var btn_ritorna_al_menu: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        btn_ritorna_al_menu.layer.cornerRadius = 3
+        btn_ritorna_al_menu.layer.shadowOpacity = 0.5
+        btn_ritorna_al_menu.layer.shadowColor = UIColor.black.cgColor
+        btn_ritorna_al_menu.layer.shadowRadius = 3
     }
     
 

@@ -111,6 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="SLa-lQ-WAT"/>
                     </view>
                     <connections>
+                        <outlet property="btn_ritorna_al_menu" destination="DSs-MV-Lqa" id="jfS-rn-6Uq"/>
                         <outlet property="lbl_istruzioni" destination="zNp-Kc-hgL" id="dYN-gt-9Re"/>
                     </connections>
                 </viewController>
