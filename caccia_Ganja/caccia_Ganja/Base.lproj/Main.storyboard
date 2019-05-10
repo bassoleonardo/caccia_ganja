@@ -126,13 +126,22 @@
                     <view key="view" contentMode="scaleToFill" id="yla-9l-ppE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-1K-A3x">
+                                <rect key="frame" x="20" y="149" width="374" height="713"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pWv-bY-B7O"/>
                     </view>
+                    <connections>
+                        <outlet property="view_spazio" destination="pdb-1K-A3x" id="XPY-ad-juz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nU-wr-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075" y="27"/>
+            <point key="canvasLocation" x="1073.913043478261" y="26.785714285714285"/>
         </scene>
     </scenes>
     <resources>

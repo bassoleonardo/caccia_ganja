@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 class ViewController_IniziaIlGioco: UIViewController {
-
+    @IBOutlet weak var view_spazio: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +27,9 @@ class ViewController_IniziaIlGioco: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func appareBob()
+    {
+        
+    }
 
 }

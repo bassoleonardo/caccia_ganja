@@ -9,7 +9,7 @@
 import UIKit
 
 let immagine_introduttiva = UIImageView(image: #imageLiteral(resourceName: "THC"))
-let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
+
 class ViewController: UIViewController {
     @IBOutlet weak var btn_inizia: UIButton!
     @IBOutlet weak var btn_istruzioni: UIButton!
@@ -26,10 +26,6 @@ class ViewController: UIViewController {
         btn_istruzioni.layer.shadowOpacity = 0.5
     }
 
-    func appare_Bob()
-    {
-        
-    }
 
 }
 
