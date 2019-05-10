@@ -135,11 +135,11 @@
                                 <rect key="frame" x="171" y="53" width="69" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="aZC-ur-YKc">
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="aZC-ur-YKc">
                                 <rect key="frame" x="248" y="53" width="69" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="mjj-il-yYH">
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="mjj-il-yYH">
                                 <rect key="frame" x="325" y="53" width="69" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -149,6 +149,9 @@
                     </view>
                     <connections>
                         <outlet property="view_spazio" destination="pdb-1K-A3x" id="XPY-ad-juz"/>
+                        <outletCollection property="array_vite" destination="A2k-Zg-W11" collectionClass="NSMutableArray" id="l5k-Eo-va2"/>
+                        <outletCollection property="array_vite" destination="aZC-ur-YKc" collectionClass="NSMutableArray" id="YfB-PZ-YxV"/>
+                        <outletCollection property="array_vite" destination="mjj-il-yYH" collectionClass="NSMutableArray" id="uRS-jh-rCT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nU-wr-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
