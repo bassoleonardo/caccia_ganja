@@ -61,6 +61,9 @@
                                 <state key="normal" title="ISTRUZIONI">
                                     <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="isw-KZ-bsM" kind="show" id="BTc-3K-3pc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,13 +85,38 @@
                     <view key="view" contentMode="scaleToFill" id="gqM-Kg-spp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-Kc-hgL">
+                                <rect key="frame" x="52" y="151" width="311" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">ISTRUZIONI..................................................................................................................................................................................</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSs-MV-Lqa">
+                                <rect key="frame" x="78" y="466" width="259" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="27"/>
+                                <state key="normal" title="RITORNA AL MENU">
+                                    <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Lwu-mj-6tD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SLa-lQ-WAT"/>
                     </view>
+                    <connections>
+                        <outlet property="lbl_istruzioni" destination="zNp-Kc-hgL" id="dYN-gt-9Re"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DG-fi-Koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47" y="697"/>
+            <point key="canvasLocation" x="506" y="749"/>
         </scene>
         <!--View Controller Inizia Il Gioco-->
         <scene sceneID="LwP-eM-eth">
