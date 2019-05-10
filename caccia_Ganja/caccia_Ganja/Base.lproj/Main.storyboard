@@ -131,7 +131,7 @@
                                 <rect key="frame" x="20" y="149" width="374" height="713"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-Zg-W11">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-Zg-W11">
                                 <rect key="frame" x="171" y="53" width="69" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
