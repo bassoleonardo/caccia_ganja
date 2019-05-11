@@ -24,9 +24,10 @@ class ViewController_IniziaIlGioco: UIViewController {
         view.isUserInteractionEnabled = true
         velocità = 2.0
         vite = 4
+        img_Bob.layer.shadowColor = UIColor.gray.cgColor
+        img_Bob.layer.shadowRadius = 3
+        img_Bob.layer.shadowOpacity = 0.5
     }
-    
-
     
     func appareBob()
     {
@@ -52,10 +53,15 @@ class ViewController_IniziaIlGioco: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let posizione = touch.location(in: view_spazio)
-            if img_Bob.frame.contains(posizione)
+            if img_Bob.frame.contains(posizione) // tocco giusto
             {
                 punteggio+=1
                 serie+=1
+                print(serie)
+                // serie 20 --> evoluzione di bob
+                if serie == 20{
+                    img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
+                }
                 img_Bob.removeFromSuperview()
             }
             else
