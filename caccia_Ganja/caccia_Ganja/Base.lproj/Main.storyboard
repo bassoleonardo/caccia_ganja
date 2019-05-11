@@ -148,12 +148,20 @@
                                     <segue destination="abe-7t-yTZ" kind="show" id="sxC-aH-wkn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac4-bN-fGi">
+                                <rect key="frame" x="20" y="53" width="104" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99818640947341919" green="0.73583153783519117" blue="0.0016323582622701964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pWv-bY-B7O"/>
                     </view>
                     <connections>
                         <outlet property="btn_procedi" destination="Ot0-zE-LYt" id="s0L-fO-fGy"/>
+                        <outlet property="lbl_punteggio_in_game" destination="Ac4-bN-fGi" id="1Jd-cI-fyg"/>
                         <outlet property="view_spazio" destination="pdb-1K-A3x" id="XPY-ad-juz"/>
                         <outletCollection property="array_vite" destination="A2k-Zg-W11" collectionClass="NSMutableArray" id="l5k-Eo-va2"/>
                         <outletCollection property="array_vite" destination="aZC-ur-YKc" collectionClass="NSMutableArray" id="YfB-PZ-YxV"/>
@@ -162,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nU-wr-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="27"/>
+            <point key="canvasLocation" x="1073.913043478261" y="26.785714285714285"/>
         </scene>
         <!--View Controller Beccato-->
         <scene sceneID="4ZT-EI-UPe">
