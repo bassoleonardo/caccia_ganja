@@ -17,6 +17,7 @@ class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
     @IBOutlet weak var btn_procedi: UIButton!
+    @IBOutlet weak var lbl_punteggio_in_game: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         btn_procedi.layer.cornerRadius = 3
         btn_procedi.layer.shadowColor = UIColor.black.cgColor
         btn_procedi.layer.shadowOpacity = 0.3
+        lbl_punteggio_in_game.text = String(punteggio)
     }
     
     func appareBob()
@@ -64,11 +66,11 @@ class ViewController_IniziaIlGioco: UIViewController {
                 punteggio+=1
                 serie+=1
                 print(serie)
-                // serie 20 --> evoluzione di bob
-                if serie == 20{
+                if serie == 20 { // serie da 20 --> evoluzione di bob
                     img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
                 }
                 img_Bob.removeFromSuperview()
+                lbl_punteggio_in_game.text = String(punteggio)
             }
             else
             {
@@ -79,6 +81,15 @@ class ViewController_IniziaIlGioco: UIViewController {
                     img_Bob.removeFromSuperview()
                     btn_procedi.isHidden = false
                     btn_procedi.isEnabled = true
+                    if serie > appoggio_serie
+                    {
+                        appoggio_serie = serie
+                        serie = 0
+                    }
+                    else
+                    {
+                        serie = 0
+                    }
                 }
                 velocità-=0.3
                 img_Bob.removeFromSuperview()
@@ -96,6 +107,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                 {
                     serie = 0
                 }
+                lbl_punteggio_in_game.text = String(punteggio)
             }
         }
     }
@@ -109,5 +121,3 @@ class ViewController_IniziaIlGioco: UIViewController {
      }
      */
 }
-
-
