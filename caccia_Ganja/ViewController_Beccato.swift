@@ -21,7 +21,7 @@ class ViewController_Beccato: UIViewController {
         btn_ritorna_al_menu.layer.shadowRadius = 3
         btn_ritorna_al_menu.layer.shadowOpacity = 0.3
         lbl_punteggio.text = "PUNTEGGIO: " + String(punteggio)
-        lbl_serie.text = "SERIE: " + String(serie)
+        lbl_serie.text = "SERIE: " + String(appoggio_serie)
         lbl_beccato.layer.cornerRadius = 8
         let img_pulotti = UIImageView(image: #imageLiteral(resourceName: "poliziotti"))
         img_pulotti.frame = CGRect(x: 80, y: 100, width: 300, height: 300)
