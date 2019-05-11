@@ -31,7 +31,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         img_Bob.layer.shadowOpacity = 0.5
         btn_procedi.isHidden = true
         btn_procedi.isEnabled = false
-        btn_procedi.layer.cornerRadius = 3
+        btn_procedi.layer.cornerRadius = 8
         btn_procedi.layer.shadowColor = UIColor.black.cgColor
         btn_procedi.layer.shadowOpacity = 0.3
         lbl_punteggio_in_game.text = String(punteggio)
