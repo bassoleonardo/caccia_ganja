@@ -33,11 +33,11 @@ class ViewController_IniziaIlGioco: UIViewController {
     {
         let larghezza_max = Int(view_spazio.frame.width) // prende la larghezza massima della view_spazio
         let altezza_max = Int(view_spazio.frame.height) // prende l'altezza massima della view_spazio
-        var altezza_random = Int.random(in: 0...altezza_max - 80) // variabile per il posizionamento immagine
-        var larghezza_random = Int.random(in: 0...larghezza_max - 80) // variabile per il posizionamento immagine
+        var altezza_random = Int.random(in: 0...altezza_max - 100) // variabile per il posizionamento immagine
+        var larghezza_random = Int.random(in: 0...larghezza_max - 100) // variabile per il posizionamento immagine
         let metàLarghezza = CGFloat(img_Bob.frame.width/2) // variabile utile al posizionamento all'interno della view_spazio
         let metàAltezza = CGFloat(img_Bob.frame.height/2) // variabile utile al posizionamento all'interno dellaa view_spazio
-        img_Bob.frame = CGRect(x: Double(larghezza_random), y: Double(altezza_random), width: 80, height: 80)
+        img_Bob.frame = CGRect(x: Double(larghezza_random), y: Double(altezza_random), width: 100, height: 100)
         self.view_spazio.addSubview(img_Bob)
         UIView.animate(withDuration: TimeInterval(velocità), animations: {
             img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza) + 0.001, y: (img_Bob.frame.maxY) + 0.001)
@@ -60,8 +60,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                 print(serie)
                 // serie 20 --> evoluzione di bob
                 if serie == 20{
-                    img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
-                }
+                    img_Bob.image = #imageLiteral(resourceName: "stoned_bob")                }
                 img_Bob.removeFromSuperview()
             }
             else
