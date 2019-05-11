@@ -20,7 +20,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         super.viewDidLoad()
         velocità = 3
         vite = 4
-        // Do any additional setup after loading the view.
+        
     }
     
 
