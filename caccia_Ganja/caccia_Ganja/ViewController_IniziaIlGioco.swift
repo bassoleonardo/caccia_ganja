@@ -9,6 +9,8 @@
 import UIKit
 let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 var vite: Int = 0
+var velocità: Int = 3
+var punteggio: Int = 0
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
@@ -17,8 +19,10 @@ class ViewController_IniziaIlGioco: UIViewController {
     // far evolvere la piantina BOB
     override func viewDidLoad() {
         super.viewDidLoad()
+        velocità = 3
         vite = 4
-        // Do any additional setup after loading the view.
+        appareBob()
+        img_Bob.addSubview(view_spazio)
     }
     
 
@@ -38,19 +42,27 @@ class ViewController_IniziaIlGioco: UIViewController {
         var altezza_random = Int.random(in: 0...altezza_max - 80) // variabile per il posizionamento immagine
         var larghezza_random = Int.random(in: 0...larghezza_max - 80) // variabile per il posizionamento immagine
         let metàLarghezza = CGFloat(img_Bob.frame.width/2) // variabile utile al posizionamento all'interno della view_spazio
-        let metàAltezza = CGFloat(img_Bob.frame.height/2) // variabile utile al posizionamento all'interno della view_spazio
-        img_Bob.frame = CGRect(x: Double(larghezza_random), y: Double(altezza_random), width: 80, height: 80)
-        UIView.animate(withDuration: 2, animations: {
-            img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza) + 0.1, y: (img_Bob.frame.maxY - metàAltezza) + 0.1)
+        let metàAltezza = CGFloat(img_Bob.frame.height/2) // variabile utile al posizionamento all'interno dellaa view_spazio
+        UIView.animate(withDuration: TimeInterval(velocità), animations: {
+            img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza), y: (img_Bob.frame.maxY))
         }) { (Bool) in
-            if vite > 0
+            if (vite > 0)
             {
-                img_Bob.removeFromSuperview()
-                self.appareBob()
+                
+            }
+        self.appareBob()
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let posizione = touch.location(in: view_spazio)
+            if img_Bob.frame.contains(posizione)
+            {
+                punteggio+=1
             }
         }
     }
-
 }
 
 
