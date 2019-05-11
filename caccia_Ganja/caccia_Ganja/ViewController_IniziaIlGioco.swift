@@ -9,7 +9,7 @@
 import UIKit
 let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 var vite: Int = 0
-var velocità: Int = 3
+var velocità: Double = 3.0
 var punteggio: Int = 0
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
@@ -19,10 +19,11 @@ class ViewController_IniziaIlGioco: UIViewController {
     // far evolvere la piantina BOB
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bringSubviewToFront(view_spazio)
+        view.isUserInteractionEnabled = true
         velocità = 3
         vite = 4
-        appareBob()
-        img_Bob.addSubview(view_spazio)
+        self.appareBob()
     }
     
 
@@ -43,8 +44,10 @@ class ViewController_IniziaIlGioco: UIViewController {
         var larghezza_random = Int.random(in: 0...larghezza_max - 80) // variabile per il posizionamento immagine
         let metàLarghezza = CGFloat(img_Bob.frame.width/2) // variabile utile al posizionamento all'interno della view_spazio
         let metàAltezza = CGFloat(img_Bob.frame.height/2) // variabile utile al posizionamento all'interno dellaa view_spazio
+        img_Bob.frame = CGRect(x: Double(larghezza_random), y: Double(altezza_random), width: 80, height: 80)
+        self.view_spazio.addSubview(img_Bob)
         UIView.animate(withDuration: TimeInterval(velocità), animations: {
-            img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza), y: (img_Bob.frame.maxY))
+            img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza) + 0.001, y: (img_Bob.frame.maxY) + 0.001)
         }) { (Bool) in
             if (vite > 0)
             {
@@ -60,6 +63,11 @@ class ViewController_IniziaIlGioco: UIViewController {
             if img_Bob.frame.contains(posizione)
             {
                 punteggio+=1
+            }
+            else
+            {
+                vite-=1
+                punteggio-=1
             }
         }
     }
