@@ -16,6 +16,7 @@ var appoggio_serie: Int = 0
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
+    @IBOutlet weak var btn_procedi: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,11 @@ class ViewController_IniziaIlGioco: UIViewController {
         img_Bob.layer.shadowColor = UIColor.gray.cgColor
         img_Bob.layer.shadowRadius = 3
         img_Bob.layer.shadowOpacity = 0.5
+        btn_procedi.isHidden = true
+        btn_procedi.isEnabled = false
+        btn_procedi.layer.cornerRadius = 3
+        btn_procedi.layer.shadowColor = UIColor.black.cgColor
+        btn_procedi.layer.shadowOpacity = 0.3
     }
     
     func appareBob()
@@ -68,6 +74,12 @@ class ViewController_IniziaIlGioco: UIViewController {
             {
                 vite-=1
                 punteggio-=1
+                if vite == 0
+                {
+                    img_Bob.removeFromSuperview()
+                    btn_procedi.isHidden = false
+                    btn_procedi.isEnabled = true
+                }
                 velocità-=0.3
                 img_Bob.removeFromSuperview()
                 for v in array_vite{

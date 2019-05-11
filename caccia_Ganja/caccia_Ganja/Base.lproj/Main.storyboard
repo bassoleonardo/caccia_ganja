@@ -143,11 +143,21 @@
                                 <rect key="frame" x="325" y="53" width="69" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot0-zE-LYt">
+                                <rect key="frame" x="116" y="471" width="182" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <state key="normal" title="PROCEDI">
+                                    <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pWv-bY-B7O"/>
                     </view>
                     <connections>
+                        <outlet property="btn_procedi" destination="Ot0-zE-LYt" id="s0L-fO-fGy"/>
                         <outlet property="view_spazio" destination="pdb-1K-A3x" id="XPY-ad-juz"/>
                         <outletCollection property="array_vite" destination="A2k-Zg-W11" collectionClass="NSMutableArray" id="l5k-Eo-va2"/>
                         <outletCollection property="array_vite" destination="aZC-ur-YKc" collectionClass="NSMutableArray" id="YfB-PZ-YxV"/>
