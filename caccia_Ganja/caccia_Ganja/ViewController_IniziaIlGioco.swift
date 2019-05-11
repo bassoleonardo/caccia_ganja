@@ -61,7 +61,7 @@ class ViewController_IniziaIlGioco: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let posizione = touch.location(in: view_spazio)
-            if img_Bob.frame.contains(posizione) // tocco giusto
+            if img_Bob.frame.contains(posizione)// tocco giusto
             {
                 punteggio+=1
                 serie+=1
