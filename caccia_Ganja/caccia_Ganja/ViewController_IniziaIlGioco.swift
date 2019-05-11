@@ -60,14 +60,15 @@ class ViewController_IniziaIlGioco: UIViewController {
                 print(serie)
                 // serie 20 --> evoluzione di bob
                 if serie == 20{
-                    img_Bob.image = #imageLiteral(resourceName: "stoned_bob")                }
+                    img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
+                }
                 img_Bob.removeFromSuperview()
             }
             else
             {
                 vite-=1
                 punteggio-=1
-                velocità-=0.5
+                velocità-=0.3
                 img_Bob.removeFromSuperview()
                 for v in array_vite{
                     if v.tag == vite{
