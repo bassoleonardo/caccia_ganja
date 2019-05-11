@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         btn_inizia.layer.shadowRadius = 3
         btn_inizia.layer.shadowColor = UIColor.black.cgColor
         btn_inizia.layer.shadowOpacity = 0.5
-        btn_istruzioni.layer.cornerRadius = 5
+        btn_istruzioni.layer.cornerRadius = 8
         btn_istruzioni.layer.shadowRadius = 3
         btn_istruzioni.layer.shadowColor = UIColor.black.cgColor
         btn_istruzioni.layer.shadowOpacity = 0.5
