@@ -193,6 +193,7 @@
                                     <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="fnc_torna_al_menu:" destination="abe-7t-yTZ" eventType="touchUpInside" id="HD7-AL-Ys1"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="5xA-4c-PJs"/>
                                 </connections>
                             </button>
@@ -241,6 +242,6 @@
         <image name="poliziotti" width="300" height="276"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lwu-mj-6tD"/>
+        <segue reference="5xA-4c-PJs"/>
     </inferredMetricsTieBreakers>
 </document>

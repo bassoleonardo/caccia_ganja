@@ -81,6 +81,15 @@ class ViewController_IniziaIlGioco: UIViewController {
                     img_Bob.removeFromSuperview()
                     btn_procedi.isHidden = false
                     btn_procedi.isEnabled = true
+                    if serie > appoggio_serie
+                    {
+                        appoggio_serie = serie
+                        serie = 0
+                    }
+                    else
+                    {
+                        serie = 0
+                    }
                 }
                 velocità-=0.3
                 img_Bob.removeFromSuperview()
@@ -112,5 +121,3 @@ class ViewController_IniziaIlGioco: UIViewController {
      }
      */
 }
-
-

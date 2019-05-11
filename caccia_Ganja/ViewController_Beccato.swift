@@ -28,6 +28,16 @@ class ViewController_Beccato: UIViewController {
     }
     
 
+    
+    @IBAction func fnc_torna_al_menu(_ sender: Any) {
+        punteggio = 0
+        serie = 0
+        vite = 4
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
