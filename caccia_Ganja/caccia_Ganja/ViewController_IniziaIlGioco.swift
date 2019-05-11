@@ -9,33 +9,25 @@
 import UIKit
 let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 var vite: Int = 0
-var velocità: Double = 3.0
+var velocità: Double = 2.0
 var punteggio: Int = 0
+var serie: Int = 0
+var appoggio_serie: Int = 0
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
     
-    // mettere come vite gli accendini !! 
-    // far evolvere la piantina BOB
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.appareBob()
         view.bringSubviewToFront(view_spazio)
         view.isUserInteractionEnabled = true
-        velocità = 3
+        velocità = 2.0
         vite = 4
-        self.appareBob()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     func appareBob()
     {
         let larghezza_max = Int(view_spazio.frame.width) // prende la larghezza massima della view_spazio
@@ -63,14 +55,41 @@ class ViewController_IniziaIlGioco: UIViewController {
             if img_Bob.frame.contains(posizione)
             {
                 punteggio+=1
+                serie+=1
+                img_Bob.removeFromSuperview()
             }
             else
             {
                 vite-=1
                 punteggio-=1
+                velocità-=0.5
+                img_Bob.removeFromSuperview()
+                for v in array_vite{
+                    if v.tag == vite{
+                        v.removeFromSuperview()
+                    }
+                }
+                if serie > appoggio_serie
+                {
+                    appoggio_serie = serie
+                    serie = 0
+                }
+                else
+                {
+                    serie = 0
+                }
             }
         }
     }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }
 
 
