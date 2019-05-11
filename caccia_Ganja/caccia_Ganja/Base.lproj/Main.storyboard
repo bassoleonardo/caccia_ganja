@@ -184,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dq3-WA-Elw">
-                                <rect key="frame" x="83" y="620" width="249" height="45"/>
+                                <rect key="frame" x="83" y="620" width="245" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
@@ -196,16 +196,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PUNTEGGIO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-1o-bWT">
-                                <rect key="frame" x="87" y="358" width="245" height="40"/>
+                                <rect key="frame" x="83" y="449" width="245" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SERIE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-rF-ZzS">
-                                <rect key="frame" x="83" y="428" width="245" height="40"/>
+                                <rect key="frame" x="83" y="520" width="245" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEI STATO BECCATO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPN-m7-pOA">
+                                <rect key="frame" x="29" y="314" width="356" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52269703805374856" green="0.18105924238607715" blue="0.77696154535119299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -215,6 +223,7 @@
                     </view>
                     <connections>
                         <outlet property="btn_ritorna_al_menu" destination="Dq3-WA-Elw" id="JJR-84-vbg"/>
+                        <outlet property="lbl_beccato" destination="sPN-m7-pOA" id="js2-RD-Wb6"/>
                         <outlet property="lbl_punteggio" destination="kQQ-1o-bWT" id="x9R-k0-xXV"/>
                         <outlet property="lbl_serie" destination="9cn-rF-ZzS" id="RG7-l8-Ur0"/>
                         <outlet property="view_pulotti" destination="JCd-K5-Iof" id="ylU-ur-mJY"/>

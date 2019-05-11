@@ -13,15 +13,16 @@ class ViewController_Beccato: UIViewController {
     @IBOutlet weak var btn_ritorna_al_menu: UIButton!
     @IBOutlet weak var lbl_punteggio: UILabel!
     @IBOutlet weak var lbl_serie: UILabel!
-    
-    
+    @IBOutlet weak var lbl_beccato: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        btn_ritorna_al_menu.layer.cornerRadius = 8
         btn_ritorna_al_menu.layer.shadowColor = UIColor.black.cgColor
         btn_ritorna_al_menu.layer.shadowRadius = 3
         btn_ritorna_al_menu.layer.shadowOpacity = 0.3
         lbl_punteggio.text = "PUNTEGGIO: " + String(punteggio)
         lbl_serie.text = "SERIE: " + String(serie)
+        lbl_beccato.layer.cornerRadius = 8
         let img_pulotti = UIImageView(image: #imageLiteral(resourceName: "poliziotti"))
         img_pulotti.frame = CGRect(x: 80, y: 100, width: 300, height: 300)
     }
