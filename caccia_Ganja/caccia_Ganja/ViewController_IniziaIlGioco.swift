@@ -48,9 +48,9 @@ class ViewController_IniziaIlGioco: UIViewController {
         }) { (Bool) in
             if (vite > 0)
             {
-                
+                img_Bob.removeFromSuperview()
+                self.appareBob()
             }
-        self.appareBob()
         }
     }
     
