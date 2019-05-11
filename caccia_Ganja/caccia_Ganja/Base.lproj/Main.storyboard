@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DG-fi-Koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="757"/>
+            <point key="canvasLocation" x="817" y="-702"/>
         </scene>
         <!--View Controller Inizia Il Gioco-->
         <scene sceneID="LwP-eM-eth">
@@ -151,6 +151,9 @@
                                 <state key="normal" title="PROCEDI">
                                     <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="abe-7t-yTZ" kind="show" id="sxC-aH-wkn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59440994262695312" green="0.99818640947341919" blue="0.31749832630157471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,11 +169,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nU-wr-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073.913043478261" y="26.785714285714285"/>
+            <point key="canvasLocation" x="1074" y="27"/>
+        </scene>
+        <!--View Controller Beccato-->
+        <scene sceneID="4ZT-EI-UPe">
+            <objects>
+                <viewController id="abe-7t-yTZ" customClass="ViewController_Beccato" customModule="caccia_Ganja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fhw-Pe-E27">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCd-K5-Iof">
+                                <rect key="frame" x="83" y="97" width="249" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dq3-WA-Elw">
+                                <rect key="frame" x="83" y="620" width="249" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <state key="normal" title="TORNA AL MENU">
+                                    <color key="titleColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="5xA-4c-PJs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PUNTEGGIO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-1o-bWT">
+                                <rect key="frame" x="87" y="358" width="245" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SERIE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-rF-ZzS">
+                                <rect key="frame" x="83" y="428" width="245" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97783166170120239" green="0.39145341515541077" blue="0.63427501916885376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="z1d-lv-xgI"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_ritorna_al_menu" destination="Dq3-WA-Elw" id="JJR-84-vbg"/>
+                        <outlet property="lbl_punteggio" destination="kQQ-1o-bWT" id="x9R-k0-xXV"/>
+                        <outlet property="lbl_serie" destination="9cn-rF-ZzS" id="RG7-l8-Ur0"/>
+                        <outlet property="view_pulotti" destination="JCd-K5-Iof" id="ylU-ur-mJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRv-f4-FdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="753.34821428571422"/>
         </scene>
     </scenes>
     <resources>
         <image name="THC" width="127" height="150"/>
         <image name="accendino_vita" width="210" height="230"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lwu-mj-6tD"/>
+    </inferredMetricsTieBreakers>
 </document>
