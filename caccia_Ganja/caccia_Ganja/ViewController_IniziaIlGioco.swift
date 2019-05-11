@@ -21,6 +21,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         super.viewDidLoad()
         velocità = 3
         vite = 4
+        appareBob()
         img_Bob.addSubview(view_spazio)
     }
     
@@ -42,13 +43,15 @@ class ViewController_IniziaIlGioco: UIViewController {
         var larghezza_random = Int.random(in: 0...larghezza_max - 80) // variabile per il posizionamento immagine
         let metàLarghezza = CGFloat(img_Bob.frame.width/2) // variabile utile al posizionamento all'interno della view_spazio
         let metàAltezza = CGFloat(img_Bob.frame.height/2) // variabile utile al posizionamento all'interno dellaa view_spazio
-        // metodo asincrono
-        velocità = 3
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(velocità), execute:
-        {
-            img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza) + 0.1, y: (img_Bob.frame.maxY - metàAltezza) + 0.1)
+        UIView.animate(withDuration: TimeInterval(velocità), animations: {
+            img_Bob.center = CGPoint(x: (img_Bob.frame.maxX - metàLarghezza), y: (img_Bob.frame.maxY))
+        }) { (Bool) in
+            if (vite > 0)
+            {
+                
             }
-        )
+        self.appareBob()
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
