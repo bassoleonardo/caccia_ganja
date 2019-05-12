@@ -11,14 +11,23 @@ let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 var vite: Int = 0
 var velocità: Double = 2.0
 var punteggio: Int = 0
-var serie: Int = 0
+var serie: Int = 0 // variabile che mi serve per aggiornare il counter della serie generale (diversa dalla serie evolutiva)
+var counter_evolutivo: Int = 0 // variable che mi serve per aggiornare il counter della serie evolutiva di bob
 var appoggio_serie: Int = 0
+var timer = Timer()
+var secondi = 5
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
     @IBOutlet weak var btn_procedi: UIButton!
     @IBOutlet weak var lbl_punteggio_in_game: UILabel!
+    @IBOutlet weak var lbl_bobSiEvolve: UILabel!
     
+    
+    
+    // l'obiettivo sarebbe quello di creare un counter a parte per la serie di tocchi che permette a bob di evolversi.
+    // sarebbe figo creare una sorta di serie evolutiva con una serie finale che permette di riacquistare delle vite
+    // quando però si è in serie e per caso si missa un tocco si ripare dallo stadio iniziale di bob.
     override func viewDidLoad() {
         super.viewDidLoad()
         self.appareBob()
@@ -35,6 +44,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         btn_procedi.layer.shadowColor = UIColor.black.cgColor
         btn_procedi.layer.shadowOpacity = 0.3
         lbl_punteggio_in_game.text = String(punteggio)
+        lbl_bobSiEvolve.isHidden = true
     }
     
     func appareBob()
@@ -64,18 +74,32 @@ class ViewController_IniziaIlGioco: UIViewController {
             if img_Bob.frame.contains(posizione)// tocco giusto
             {
                 punteggio+=1
-                serie+=1
+                serie+=1 // serie normale
+                counter_evolutivo+=1
                 print(serie)
-                if serie == 20 { // serie da 20 --> evoluzione di bob
+                if counter_evolutivo == 20 { // serie da 20 --> evoluzione di bob
                     img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
+                    lbl_bobSiEvolve.isHidden = false
+                }
+                else if counter_evolutivo == 40 // restore delle vite e della velocità
+                {
+                    vite = 4
+                    velocità = 2.0
+                    lbl_bobSiEvolve.text = " RESET "
+                    for v in array_vite{
+                        v.isHidden = false// con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
+                    }
                 }
                 img_Bob.removeFromSuperview()
-                lbl_punteggio_in_game.text = String(punteggio)
+                lbl_punteggio_in_game.text = String(punteggio) // indicatore del punteggio
             }
             else
             {
                 vite-=1
                 punteggio-=1
+                counter_evolutivo = 0
+                img_Bob.image = #imageLiteral(resourceName: "bob")
+                lbl_bobSiEvolve.isHidden = true
                 if vite == 0
                 {
                     img_Bob.removeFromSuperview()
@@ -95,7 +119,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                 img_Bob.removeFromSuperview()
                 for v in array_vite{
                     if v.tag == vite{
-                        v.removeFromSuperview()
+                        v.isHidden = true
                     }
                 }
                 if serie > appoggio_serie
@@ -111,6 +135,7 @@ class ViewController_IniziaIlGioco: UIViewController {
             }
         }
     }
+    
     /*
      // MARK: - Navigation
      
