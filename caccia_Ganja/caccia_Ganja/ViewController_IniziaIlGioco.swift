@@ -15,6 +15,7 @@ var serie: Int = 0 // variabile che mi serve per aggiornare il counter della ser
 var counter_evolutivo: Int = 0 // variable che mi serve per aggiornare il counter della serie evolutiva di bob
 var appoggio_serie: Int = 0
 var timer = Timer()
+var secondi = 5
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
@@ -87,7 +88,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                     vite = 4
                     velocità = 2.0
                     lbl_bobSiEvolve.text = " RESET "
-                    while
+                    
                     for v in array_vite{
                         v.isHidden = false// con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
                     }
@@ -135,6 +136,13 @@ class ViewController_IniziaIlGioco: UIViewController {
                 lbl_punteggio_in_game.text = String(punteggio)
             }
         }
+    }
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(ViewController_IniziaIlGioco.updateTimer)), userInfo: nil, repeats: true)
+    }
+    @objc func updateTimer() {
+        secondi -= 1     //This will decrement(count down)the seconds.
     }
     /*
      // MARK: - Navigation
