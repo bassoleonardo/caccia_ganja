@@ -19,6 +19,11 @@ class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var btn_procedi: UIButton!
     @IBOutlet weak var lbl_punteggio_in_game: UILabel!
     
+    
+    
+    // l'obiettivo sarebbe quello di creare un counter a parte per la serie di tocchi che permette a bob di evolversi.
+    // sarebbe figo creare una sorta di serie evolutiva con una serie finale che permette di riacquistare delle vite
+    // quando però si è in serie e per caso si missa un tocco si ripare dallo stadio iniziale di bob.
     override func viewDidLoad() {
         super.viewDidLoad()
         self.appareBob()
