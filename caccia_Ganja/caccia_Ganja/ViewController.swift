@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btn_inizia.layer.cornerRadius = 5
-        btn_inizia.layer.shadowRadius = 3
+        btn_inizia.layer.shadowRadius = 8
         btn_inizia.layer.shadowColor = UIColor.black.cgColor
         btn_inizia.layer.shadowOpacity = 0.5
         btn_istruzioni.layer.cornerRadius = 8

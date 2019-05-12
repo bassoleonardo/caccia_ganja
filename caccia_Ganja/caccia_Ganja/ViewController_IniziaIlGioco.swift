@@ -45,6 +45,10 @@ class ViewController_IniziaIlGioco: UIViewController {
         btn_procedi.layer.shadowOpacity = 0.3
         lbl_punteggio_in_game.text = String(punteggio)
         lbl_bobSiEvolve.isHidden = true
+        lbl_bobSiEvolve.isHighlighted = true
+        lbl_bobSiEvolve.highlightedTextColor = UIColor.green
+        lbl_punteggio_in_game.isHidden = false
+        
     }
     
     func appareBob()
@@ -105,6 +109,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                     img_Bob.removeFromSuperview()
                     btn_procedi.isHidden = false
                     btn_procedi.isEnabled = true
+                    lbl_punteggio_in_game.isHidden = true
                     if serie > appoggio_serie
                     {
                         appoggio_serie = serie

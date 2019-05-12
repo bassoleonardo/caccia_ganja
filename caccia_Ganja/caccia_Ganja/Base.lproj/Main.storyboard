@@ -158,15 +158,19 @@ Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fi
                                 <rect key="frame" x="20" y="53" width="104" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.45111596580000002" green="0.058944873510000002" blue="0.13108268379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BOB IS STONED !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iql-gL-Yl0">
                                 <rect key="frame" x="85" y="808" width="244" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99818640947341919" green="0.73583153783519117" blue="0.0016323582622701964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
