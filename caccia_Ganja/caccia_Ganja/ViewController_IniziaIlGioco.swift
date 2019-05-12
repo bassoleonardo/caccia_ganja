@@ -11,7 +11,8 @@ let img_Bob = UIImageView(image: #imageLiteral(resourceName: "bob"))
 var vite: Int = 0
 var velocità: Double = 2.0
 var punteggio: Int = 0
-var serie: Int = 0
+var serie: Int = 0 // variabile che mi serve per aggiornare il counter della serie generale (diversa dalla serie evolutiva)
+var counter_evolutivo: Int = 0 // variable che mi serve per aggiornare il counter della serie evolutiva di bob
 var appoggio_serie: Int = 0
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
@@ -69,18 +70,28 @@ class ViewController_IniziaIlGioco: UIViewController {
             if img_Bob.frame.contains(posizione)// tocco giusto
             {
                 punteggio+=1
-                serie+=1
+                serie+=1 // serie normale
+                counter_evolutivo+=1
                 print(serie)
-                if serie == 20 { // serie da 20 --> evoluzione di bob
+                if counter_evolutivo == 20 { // serie da 20 --> evoluzione di bob
                     img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
                 }
+                else if counter_evolutivo == 40 // restore delle vite e della velocità
+                {
+                    vite = 4
+                    velocità = 2.0
+                    for v in array_vite{
+                        v.addSubview(view_spazio) // con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
+                    }
+                }
                 img_Bob.removeFromSuperview()
-                lbl_punteggio_in_game.text = String(punteggio)
+                lbl_punteggio_in_game.text = String(punteggio) // indicatore del punteggio
             }
             else
             {
                 vite-=1
                 punteggio-=1
+                img_Bob.image = #imageLiteral(resourceName: "bob")
                 if vite == 0
                 {
                     img_Bob.removeFromSuperview()
