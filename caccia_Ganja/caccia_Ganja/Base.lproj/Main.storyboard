@@ -127,7 +127,7 @@ Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fi
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-1K-A3x">
-                                <rect key="frame" x="20" y="149" width="374" height="676"/>
+                                <rect key="frame" x="20" y="149" width="374" height="651"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accendino_vita" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-Zg-W11">
@@ -161,12 +161,20 @@ Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fi
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BOB IS STONED !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iql-gL-Yl0">
+                                <rect key="frame" x="85" y="808" width="244" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99818640947341919" green="0.73583153783519117" blue="0.0016323582622701964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pWv-bY-B7O"/>
                     </view>
                     <connections>
                         <outlet property="btn_procedi" destination="Ot0-zE-LYt" id="s0L-fO-fGy"/>
+                        <outlet property="lbl_bobSiEvolve" destination="iql-gL-Yl0" id="ggo-zI-2Ac"/>
                         <outlet property="lbl_punteggio_in_game" destination="Ac4-bN-fGi" id="1Jd-cI-fyg"/>
                         <outlet property="view_spazio" destination="pdb-1K-A3x" id="XPY-ad-juz"/>
                         <outletCollection property="array_vite" destination="A2k-Zg-W11" collectionClass="NSMutableArray" id="l5k-Eo-va2"/>
