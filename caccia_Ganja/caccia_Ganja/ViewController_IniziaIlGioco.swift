@@ -81,7 +81,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                     vite = 4
                     velocità = 2.0
                     for v in array_vite{
-                        v.addSubview(view_spazio) // con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
+                        v.isHidden = false// con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
                     }
                 }
                 img_Bob.removeFromSuperview()
@@ -91,6 +91,7 @@ class ViewController_IniziaIlGioco: UIViewController {
             {
                 vite-=1
                 punteggio-=1
+                counter_evolutivo = 0
                 img_Bob.image = #imageLiteral(resourceName: "bob")
                 if vite == 0
                 {
@@ -111,7 +112,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                 img_Bob.removeFromSuperview()
                 for v in array_vite{
                     if v.tag == vite{
-                        v.removeFromSuperview()
+                        v.isHidden = true
                     }
                 }
                 if serie > appoggio_serie
