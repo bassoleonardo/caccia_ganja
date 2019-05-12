@@ -79,14 +79,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-Kc-hgL">
-                                <rect key="frame" x="52" y="151" width="311" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">ISTRUZIONI........................................................................................................................................................................................................................................</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSs-MV-Lqa">
                                 <rect key="frame" x="78" y="679" width="259" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,6 +91,20 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Lwu-mj-6tD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-Kc-hgL">
+                                <rect key="frame" x="36" y="65" width="342" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">ISTRUZIONI 
+Ehi tu…….si si si sto parlando proprio a te che hai avuto la malsana idea di imbarcarti in questo gioco. Beh, permettimi dunque di spiegarti cosa stai per affrontare
+Il gioco è molto semplice…quello che devi fare è cliccare sul personaggio principale: “BOB”, una foglia molto particolare.
+
+Il tuo obiettivo è quello di continuare a prendere BOB, facendo alzare così il tuo punteggio.
+Ovviamente avrai un counter delle vite, rappresentato dai magici accendini i alto a destra.
+Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fila correttament</mutableString>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.52269703810000001" green="0.18105924239999999" blue="0.77696154539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SLa-lQ-WAT"/>
@@ -110,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DG-fi-Koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817" y="-702"/>
+            <point key="canvasLocation" x="815.94202898550736" y="-702.45535714285711"/>
         </scene>
         <!--View Controller Inizia Il Gioco-->
         <scene sceneID="LwP-eM-eth">
@@ -242,6 +248,6 @@
         <image name="poliziotti" width="300" height="276"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5xA-4c-PJs"/>
+        <segue reference="Lwu-mj-6tD"/>
     </inferredMetricsTieBreakers>
 </document>
