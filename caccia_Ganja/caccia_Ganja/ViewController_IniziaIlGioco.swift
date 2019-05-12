@@ -80,15 +80,12 @@ class ViewController_IniziaIlGioco: UIViewController {
                 if counter_evolutivo == 20 { // serie da 20 --> evoluzione di bob
                     img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
                     lbl_bobSiEvolve.isHidden = false
-                    lbl_bobSiEvolve.isHidden = true
-                    
                 }
                 else if counter_evolutivo == 40 // restore delle vite e della velocità
                 {
                     vite = 4
                     velocità = 2.0
                     lbl_bobSiEvolve.text = " RESET "
-                    
                     for v in array_vite{
                         v.isHidden = false// con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
                     }
@@ -102,6 +99,7 @@ class ViewController_IniziaIlGioco: UIViewController {
                 punteggio-=1
                 counter_evolutivo = 0
                 img_Bob.image = #imageLiteral(resourceName: "bob")
+                lbl_bobSiEvolve.isHidden = true
                 if vite == 0
                 {
                     img_Bob.removeFromSuperview()
@@ -138,12 +136,6 @@ class ViewController_IniziaIlGioco: UIViewController {
         }
     }
     
-    func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(ViewController_IniziaIlGioco.updateTimer)), userInfo: nil, repeats: true)
-    }
-    @objc func updateTimer() {
-        secondi -= 1     //This will decrement(count down)the seconds.
-    }
     /*
      // MARK: - Navigation
      
