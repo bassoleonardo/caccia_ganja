@@ -19,6 +19,7 @@ class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet var array_vite: [UIImageView]!
     @IBOutlet weak var btn_procedi: UIButton!
     @IBOutlet weak var lbl_punteggio_in_game: UILabel!
+    @IBOutlet weak var lbl_bobSiEvolve: UILabel!
     
     
     
@@ -41,6 +42,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         btn_procedi.layer.shadowColor = UIColor.black.cgColor
         btn_procedi.layer.shadowOpacity = 0.3
         lbl_punteggio_in_game.text = String(punteggio)
+        lbl_bobSiEvolve.isHidden = true
     }
     
     func appareBob()
@@ -75,11 +77,16 @@ class ViewController_IniziaIlGioco: UIViewController {
                 print(serie)
                 if counter_evolutivo == 20 { // serie da 20 --> evoluzione di bob
                     img_Bob.image = #imageLiteral(resourceName: "stoned_bob")
+                    lbl_bobSiEvolve.isHidden = false
+                    lbl_bobSiEvolve.isHidden = true
+                    
                 }
                 else if counter_evolutivo == 40 // restore delle vite e della velocità
                 {
                     vite = 4
                     velocità = 2.0
+                    lbl_bobSiEvolve.text = " RESET "
+                    while
                     for v in array_vite{
                         v.isHidden = false// con questo in teoria dovrei essere sicuro dell'aggiunta delle vite
                     }
