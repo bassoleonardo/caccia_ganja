@@ -14,6 +14,7 @@ var punteggio: Int = 0
 var serie: Int = 0 // variabile che mi serve per aggiornare il counter della serie generale (diversa dalla serie evolutiva)
 var counter_evolutivo: Int = 0 // variable che mi serve per aggiornare il counter della serie evolutiva di bob
 var appoggio_serie: Int = 0
+var timer = Timer()
 class ViewController_IniziaIlGioco: UIViewController {
     @IBOutlet weak var view_spazio: UIImageView!
     @IBOutlet var array_vite: [UIImageView]!
