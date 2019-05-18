@@ -14,6 +14,8 @@ var punteggio: Int = 0
 var serie: Int = 0 // variabile che mi serve per aggiornare il counter della serie generale (diversa dalla serie evolutiva)
 var counter_evolutivo: Int = 0 // variable che mi serve per aggiornare il counter della serie evolutiva di bob
 var appoggio_serie: Int = 0
+var record_attuale: Int = 0 
+var appoggio_record: Int = 0
 var timer = Timer()
 var secondi = 5
 class ViewController_IniziaIlGioco: UIViewController {
@@ -119,6 +121,16 @@ class ViewController_IniziaIlGioco: UIViewController {
                     else
                     {
                         serie = 0
+                    }
+                    record_attuale = punteggio
+                    if record_attuale > appoggio_record // dati necessari all'indicazione del record nel secondo viewController
+                    {
+                        appoggio_record = record_attuale
+                        record_attuale = 0
+                    }
+                    else
+                    {
+                        record_attuale = 0
                     }
                 }
                 velocità-=0.3
