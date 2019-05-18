@@ -14,6 +14,8 @@ class ViewController_Beccato: UIViewController {
     @IBOutlet weak var lbl_punteggio: UILabel!
     @IBOutlet weak var lbl_serie: UILabel!
     @IBOutlet weak var lbl_beccato: UILabel!
+    @IBOutlet weak var lbl_record: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btn_ritorna_al_menu.layer.cornerRadius = 8

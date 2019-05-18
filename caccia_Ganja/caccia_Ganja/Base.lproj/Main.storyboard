@@ -215,25 +215,32 @@ Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fi
                                     <segue destination="BYZ-38-t0r" kind="show" id="5xA-4c-PJs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEI STATO BECCATO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPN-m7-pOA">
+                                <rect key="frame" x="29" y="307" width="356" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52269703805374856" green="0.18105924238607715" blue="0.77696154535119299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECORD: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-W1-fQX">
+                                <rect key="frame" x="92" y="580" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PUNTEGGIO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-1o-bWT">
-                                <rect key="frame" x="92" y="523" width="245" height="40"/>
+                                <rect key="frame" x="92" y="429" width="245" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SERIE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-rF-ZzS">
-                                <rect key="frame" x="92" y="594" width="245" height="40"/>
+                                <rect key="frame" x="92" y="500" width="245" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEI STATO BECCATO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPN-m7-pOA">
-                                <rect key="frame" x="29" y="307" width="356" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.52269703805374856" green="0.18105924238607715" blue="0.77696154535119299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -245,6 +252,7 @@ Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fi
                         <outlet property="btn_ritorna_al_menu" destination="Dq3-WA-Elw" id="JJR-84-vbg"/>
                         <outlet property="lbl_beccato" destination="sPN-m7-pOA" id="js2-RD-Wb6"/>
                         <outlet property="lbl_punteggio" destination="kQQ-1o-bWT" id="x9R-k0-xXV"/>
+                        <outlet property="lbl_record" destination="vkX-W1-fQX" id="F72-wW-pNz"/>
                         <outlet property="lbl_serie" destination="9cn-rF-ZzS" id="RG7-l8-Ur0"/>
                         <outlet property="view_pulotti" destination="JCd-K5-Iof" id="ylU-ur-mJY"/>
                     </connections>
@@ -260,6 +268,6 @@ Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fi
         <image name="poliziotti" width="300" height="276"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lwu-mj-6tD"/>
+        <segue reference="5xA-4c-PJs"/>
     </inferredMetricsTieBreakers>
 </document>
