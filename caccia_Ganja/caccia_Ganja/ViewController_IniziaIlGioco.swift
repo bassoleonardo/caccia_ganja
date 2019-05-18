@@ -43,6 +43,7 @@ class ViewController_IniziaIlGioco: UIViewController {
         btn_procedi.layer.cornerRadius = 8
         btn_procedi.layer.shadowColor = UIColor.black.cgColor
         btn_procedi.layer.shadowOpacity = 0.3
+        btn_procedi.layer.shadowRadius = 3
         lbl_punteggio_in_game.text = String(punteggio)
         lbl_bobSiEvolve.isHidden = true
         lbl_bobSiEvolve.isHighlighted = true
