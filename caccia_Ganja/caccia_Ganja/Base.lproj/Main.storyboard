@@ -79,16 +79,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-Kc-hgL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ISTRUZIONI ...                                                                                                         " lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-Kc-hgL">
                                 <rect key="frame" x="36" y="65" width="358" height="512"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">ISTRUZIONI 
-Ehi tu…….si si si sto parlando proprio a te che hai avuto la malsana idea di imbarcarti in questo gioco. Beh, permettimi dunque di spiegarti cosa stai per affrontare
-Il gioco è molto semplice…quello che devi fare è cliccare sul personaggio principale: “BOB”, una foglia molto particolare.
-
-Il tuo obiettivo è quello di continuare a prendere BOB, facendo alzare così il tuo punteggio.
-Ovviamente avrai un counter delle vite, rappresentato dai magici accendini i alto a destra.
-Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fila correttamente. Dopo una serie di 40 tocchi si avrà un reset delle vite                                                                                                                </mutableString>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway SemiBold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

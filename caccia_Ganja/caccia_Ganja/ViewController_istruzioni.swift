@@ -17,19 +17,23 @@ class ViewController_istruzioni: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        btn_ritorna_al_menu.layer.cornerRadius = 3
+        btn_ritorna_al_menu.layer.cornerRadius = 8
+        btn_ritorna_al_menu.layer.shadowRadius = 3
         btn_ritorna_al_menu.layer.shadowOpacity = 0.5
         btn_ritorna_al_menu.layer.shadowColor = UIColor.black.cgColor
-        btn_ritorna_al_menu.layer.shadowRadius = 3
+        // si possono mettere le tre virgolette per poi scrivere un testo con molteplici linee
         lbl_istruzioni.text = """
 ISTRUZIONI
         
-Ehi tu…….si si si sto parlando proprio a te che hai avuto la malsana idea di imbarcarti in questo gioco. Beh, permettimi dunque di spiegarti cosa stai per affrontare
+Ehi tu…….si si si sto parlando proprio a te che hai avuto la malsana idea di imbarcarti in questo gioco. Beh, permettimi dunque di spiegarti
+        cosa stai per affrontare
 Il gioco è molto semplice…quello che devi fare è cliccare sul personaggio principale: “BOB”, una foglia molto particolare.
 
 Il tuo obiettivo è quello di continuare a prendere BOB, facendo alzare così il tuo punteggio.
 Ovviamente avrai un counter delle vite, rappresentato dai magici accendini i alto a destra.
-Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fila correttamente. Dopo una serie di 40 tocchi si avrà un reset delle vite
+Durante il gioco, BOB evolverà se sarai così bravo da eseguire 20 tocchi di fila correttamente.
+Dopo una serie di 40 tocchi si avrà un reset delle vite
+        
 """
     }
     
