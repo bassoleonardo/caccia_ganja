@@ -104,6 +104,10 @@ class ViewController_IniziaIlGioco: UIViewController {
             {
                 vite-=1
                 punteggio-=1
+                if punteggio < 0
+                {
+                    punteggio = 0
+                }
                 counter_evolutivo = 0
                 img_Bob.image = #imageLiteral(resourceName: "bob")
                 lbl_bobSiEvolve.isHidden = true
